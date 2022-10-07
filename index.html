@@ -2,69 +2,54 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My title</title>
+    <title>Pizza order</title>
   </head>
   <body>
     <header>
-      <h1><u>Phazerous website</u></h1>
-      <p>HTML only</p>
+      <h1>PizzaHub</h1>
+      <p>The delicious pizza we can order</p>
     </header>
 
     <main>
-      <section>
-        <h2>About me</h2>
-        <p>Hello! I'm Nikita. I have been interested in programming since I was 14. The movie that probably changed my life (that introduces the world of programming) was "Who am I?" Since that time I have been trying many technologies, languages and so on. I found out that, for instance, GameDev is not what I would like to spend my life on. But FullStack-developing is what I am to</p>
-        <p>So I want to show you what I do now</p>
+      <form action="index.html" method="post">
+        <section class="pizzaType">
+          <section class="pizzaType__ingridients">
+            <h3>Ingridients:</h3>
+            <p><input type="checkbox" name="ingridient" value="pepperoni">Pepperoni</p>
+            <p><input type="checkbox" name="ingridient" value="salami">Salami</p>
+            <p><input type="checkbox" name="ingridient" value="bacon">Bacon</p>
+            <p><input type="checkbox" name="ingridient" value="sausage">Sausage</p>
+            <p><input type="checkbox" name="ingridient" value="cheese">Cheese</p>
+            <p><input type="checkbox" name="ingridient" value="pineapple">Pineapple</p>
+          </section>
 
-        <ul>
-          <li>Tutoring</li>
-          <li>Worling in a company</li>
-          <li>
-            Learning programming
-            <ul>
-              <li>Competetive courses from universities</li>
-              <li>Udemy courses</li>
-              <li>Self-searching on the Internet (e.g. YouTube, Habr and so on)</li>
-            </ul>
-          </li>
-        </ul>
+          <section class="pizzaType__size">
+            <h3>Pizza size</h3>
+            <select class="pizzaSize">
+              <option value="16 cm.">16cm. - 100$</option>
+              <option value="18 cm.">18cm. - 200$</option>
+              <option value="20 cm.">20cm. - 300$</option>
+            </select>
+          </section>
+        </section>
 
-        <p>Here is what I learn and where:</p>
-        <table border="1px">
-          <thead>
-            <tr>
-              <th>Techonoly</th>
-              <th>Where</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Kotlin</td>
-              <td><a href="https://kotlin.mephi.ru/">Kotlin MEPhI Course</a></td>
-            </tr>
+        <section class="deliveryType">
+          <h3>Delivery type</h3>
+          <p><input type="radio" name="deliveryMethod" value="Delivery">Delivery</p>
+          <p><input type="radio" name="deliveryMethod" value="Pick-point">Pick-Point</p>
+        </section>
 
-            <tr>
-              <td>JavaScript</td>
-              <td><a href="https://edu.greenatom.ru/caselab/JS1/">Case Lab JavaScript</a></td>
-            </tr>
+        <section class="address">
+          <h3>Address</h3>
+          <p>Town <input type="text" name="town" placeholder="Town"></p>
+          <p>Street <input type="text" name="street" placeholder="Street"></p>
+          <p>Apartament <input type="text" name="apartament" placeholder="Apartament"></p>
+        </section>
 
-            <tr>
-              <td>FrontEnd</td>
-              <td><a href="https://www.udemy.com/course/front-end-web-development/">The Complete Front-End Web Development Course!</a></td>
-            </tr>
-
-            <tr>
-              <td>Spring</td>
-              <td><a href="https://www.udemy.com/course/spring-framework-5-beginner-to-guru/">Spring Framework 5: Beginner to Guru</a></td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+        <section class="submit">
+          <button type="submit">Order the pizza</button>
+        </section>
+      </form>
     </main>
-
-    <footer>
-      <h5>This is a fast-html-practice, so there can be a lot of mispellings. :0</h5>
-      <center>Created by <a href="https://github.com/Phazerous">Phazerous</a></center>
-    </footer>
   </body>
 </html>

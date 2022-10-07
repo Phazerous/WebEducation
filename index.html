@@ -2,54 +2,29 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Pizza order</title>
+    <title>jQuery</title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
-    <header>
-      <h1>PizzaHub</h1>
-      <p>The delicious pizza we can order</p>
-    </header>
 
-    <main>
-      <form action="index.html" method="post">
-        <section class="pizzaType">
-          <section class="pizzaType__ingridients">
-            <h3>Ingridients:</h3>
-            <p><input type="checkbox" name="ingridient" value="pepperoni">Pepperoni</p>
-            <p><input type="checkbox" name="ingridient" value="salami">Salami</p>
-            <p><input type="checkbox" name="ingridient" value="bacon">Bacon</p>
-            <p><input type="checkbox" name="ingridient" value="sausage">Sausage</p>
-            <p><input type="checkbox" name="ingridient" value="cheese">Cheese</p>
-            <p><input type="checkbox" name="ingridient" value="pineapple">Pineapple</p>
-          </section>
+    <section>
+      <h1>Messenger</h1>
 
-          <section class="pizzaType__size">
-            <h3>Pizza size</h3>
-            <select class="pizzaSize">
-              <option value="16 cm.">16cm. - 100$</option>
-              <option value="18 cm.">18cm. - 200$</option>
-              <option value="20 cm.">20cm. - 300$</option>
-            </select>
-          </section>
-        </section>
+      <div class="message">
+        <h3>Your message:</h3>
+        <div class="message-box">
+          <textarea id="text" placeholder="Type something here"></textarea>
+          <button id="send">Send</button>
+        </div>
+      </div>
 
-        <section class="deliveryType">
-          <h3>Delivery type</h3>
-          <p><input type="radio" name="deliveryMethod" value="Delivery">Delivery</p>
-          <p><input type="radio" name="deliveryMethod" value="Pick-point">Pick-Point</p>
-        </section>
+      <h2>Dialogue</h2>
+      <div class="dialogue">
 
-        <section class="address">
-          <h3>Address</h3>
-          <p>Town <input type="text" name="town" placeholder="Town"></p>
-          <p>Street <input type="text" name="street" placeholder="Street"></p>
-          <p>Apartament <input type="text" name="apartament" placeholder="Apartament"></p>
-        </section>
-
-        <section class="submit">
-          <button type="submit">Order the pizza</button>
-        </section>
-      </form>
-    </main>
+      </div>
+    </section>
   </body>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" charset="utf-8"></script>
+  <script src="main.js" charset="utf-8"></script>
 </html>

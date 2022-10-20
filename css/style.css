@@ -8,39 +8,80 @@
   font-size: 10px;
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.profile-cards {
-  margin-top: 20rem;
+section {
+  margin-top: 5rem;
   display: flex;
-  justify-content: space-around;
-  background-color: #ffd6ec;
-}
-
-.profile-cards__card {
-  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding: 2rem;
+
+  gap: 2rem;
 }
 
-.profile-cards__card--img {
-  width: 20rem;
-  height: 20rem;
-  object-fit: cover;
-  border-radius: 100rem;
+h2 {
+  font-size: 3rem;
 }
 
-.profile-cards__card--info {
-  margin-left: 2rem;
+form {
+  display: flex;
+  flex-direction: column;
+
+  gap: 1rem;
+  width: 30%;
 }
 
-.profile-cards__card--info__name {
-  font-size: 2rem;
+input {
+  outline: none;
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  border-radius: 1rem;
 }
 
-.profile-cards__card--info__role {
-  color: gray;
+input[type="submit"] {
+  border: none;
+  color: white;
+  background-color: #6a67ce;
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+li {
+  width: 33.33%;
+  list-style: none;
+  padding: 1rem 0;
+  border-radius: 0.5rem;
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+ul li a {
+  color: white;
   font-size: 1.5rem;
+  text-decoration: none;
+}
+
+ul li:first-child {
+  background-color: #2155cd;
+}
+
+ul li:nth-child(2) {
+  background-color: #79dae8;
+}
+
+ul li:last-child {
+  background-color: #eb5353;
+}
+
+p,
+a {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+a {
+  text-decoration: none;
 }

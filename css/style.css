@@ -1,38 +1,46 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    color: black;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    font-size: 10px;
+  font-size: 10px;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.navigation {
-    margin: 3rem;
-    display: flex;
-    justify-content: space-between;
-    background-color: blueviolet;
-    padding: 1rem 2.5rem;
-    border-radius: 1.5rem;
-    font-size: 1.2rem;
+.profile-cards {
+  margin-top: 20rem;
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffd6ec;
 }
 
-.navigation__link {
-    font-size: 2rem;
-    padding: .4rem 2rem;
-    border-radius: 2rem;
-    color: white;
-    transition: all .25s ease-in;
+.profile-cards__card {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
 }
 
-.navigation__link:hover {
-    color: blueviolet;
-    background-color: white;
+.profile-cards__card--img {
+  width: 20rem;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 100rem;
+}
+
+.profile-cards__card--info {
+  margin-left: 2rem;
+}
+
+.profile-cards__card--info__name {
+  font-size: 2rem;
+}
+
+.profile-cards__card--info__role {
+  color: gray;
+  font-size: 1.5rem;
 }

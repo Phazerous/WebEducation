@@ -1,6 +1,6 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
@@ -13,58 +13,55 @@ body {
   line-height: 1.5;
 }
 
-header {
-  margin: 5rem;
+section {
+  width: 40rem;
+  margin: auto;
+  padding: 2rem 4rem;
 
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 1rem 2rem;
+  flex-direction: column;
+  gap: 2.5rem;
 
-  padding: 1rem 2rem;
-  border-radius: 1rem;
-  background-color: #827397;
+  box-shadow: 2px 2px 30px 4px lightgray;
 }
 
-h3 {
-  font-size: 2rem;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.price, .cart {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #28a19d;
   color: #fff;
-}
-
-nav {
-  flex-basis: 30%;
-
-  display: flex;
-  gap: 1rem;
-}
-
-nav a {
-  text-align: center;
-  font-size: 1.5rem;
-  text-decoration: none;
-  background-color: #fff;
-  color: #000;
-  padding: 1rem 2rem;
   border-radius: 1rem;
-
-  flex: 1 1 0%;
 }
 
-input[type="search"] {
-  border: none;
-  outline: none;
-  padding: 1rem 2rem;
-  border-radius: .5rem;
+.name {
+  font-size: 3rem;
+}
+
+.description {
   font-size: 1.5rem;
 }
 
-@media screen and (max-width: 800px) {
-  header {
-    flex-wrap: wrap;
-  }
+.price {
+  align-self: flex-start;
+  cursor: pointer;
+}
 
-  nav {
-    order: 3;
-    flex-basis: 100%;
-  }
+.cart {
+  text-decoration: none;
+  align-self: flex-end;
+}
+
+span {
+  width: 30%;
+  margin: auto;
+  display: block;
+  border: dotted lightgray 5px;
+  border-bottom: none;
+  height: 1px;
 }

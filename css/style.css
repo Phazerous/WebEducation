@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@300;400;700&family=Sacramento&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -9,59 +11,103 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 1.5;
 }
 
-section {
-  width: 40rem;
+main {
+  margin-top: 20rem;
+  padding: 3rem;
+  background-color: #1C9896;
+}
+
+form {
+  width: 30%;
   margin: auto;
-  padding: 2rem 4rem;
 
   display: flex;
   flex-direction: column;
-  gap: 2.5rem;
+  flex: 1 1 0%;
+  gap: 5rem 0;
 
-  box-shadow: 2px 2px 30px 4px lightgray;
+  padding: 5rem 4rem;
+  border-radius: 2rem;
+  background-color: white;
 }
 
-img {
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem 2rem;
+}
+
+.contacts-name, .contacts-phone {
+  flex-basis: 100%;
+}
+
+input {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.price, .cart {
-  font-size: 1.2rem;
   padding: 1rem 2rem;
-  background-color: #28a19d;
-  color: #fff;
+  border: 1px solid lightgray;
   border-radius: 1rem;
+  background-color: #F5F5F5;
+  outline: none;
+  transition: outline .5s ease-out;
 }
 
-.name {
-  font-size: 3rem;
+#phone {
+  font-weight: bold;
 }
 
-.description {
-  font-size: 1.5rem;
+input:focus {
+  outline: 1.5px solid #1C9896;
 }
 
-.price {
-  align-self: flex-start;
-  cursor: pointer;
+h2 {
+  text-align: center;
+  font-size: 2rem;
 }
 
-.cart {
+.consent {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+p {
+  flex: 1 1 50%;
+  font-size: 1.2rem;
+}
+
+a {
   text-decoration: none;
-  align-self: flex-end;
 }
 
-span {
-  width: 30%;
-  margin: auto;
+label {
+  color: gray;
+  font-size: 1.2rem;
+  margin-left: .5rem;
   display: block;
-  border: dotted lightgray 5px;
-  border-bottom: none;
-  height: 1px;
+}
+
+.send-button {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  align-self: center;
+  padding: 1rem 2rem;
+  background-color: #1C9896;
+  border-radius: 3rem;
+  transition: all .34s ease-in;
+}
+
+.send-button:hover {
+  padding: 1.2rem 2.2rem;
+  background-color: #1C8896;
+}
+
+@media screen and (max-width: 1500px) {
+  .contacts {
+    flex-wrap: wrap;
+  }
 }

@@ -4,24 +4,31 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Card</title>
+  <title>Signature</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <section>
-    <figure>
-      <img loading="lazy" src="images/bike.jpeg" alt="bicycle">
-    </figure>
+  <main>
+    <form>
+      <h2>Закажите электронную подпись</h2>
+  
+      <div class="contacts">
+        <div class="contacts-name">
+          <label for="name">Имя</label>
+          <input id="name" type="name">
+        </div>
 
-    <span></span>
-
-    <p class="price">$400</p>
-
-    <h2 class="name">Strange Bicycle</h2>
-
-    <p class="description">The coolest bike I have ever seen in my life</p>
-
-    <a href="#" class="cart">Add to Cart</a>
-  </section>
+        <div class="contacts-phone">
+          <label for="phone">Номер телефона</label>
+          <input id="phone" type="phone" value="+7">
+        </div>
+      </div>
+  
+      <div class="consent">
+        <p>Нажимая на кнопку, я даю своё <a href="consent-file">согласие на взаимодействие и обработку персональных данных</a></p>
+        <a class="send-button" href="#">Отправить заявку</a>
+      </div>
+    </form>
+  </main>
 </body>
 </html>

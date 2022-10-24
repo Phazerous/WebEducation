@@ -5,40 +5,23 @@
 }
 
 :root {
-  font-size: 10px;
+  font-size: 30px;
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-}
-
-.gallery {
   height: 100vh;
-  width: 100vw;
-
   display: grid;
-  grid-template-columns: 50% 50%;
+
+  grid-template-rows: auto 1fr auto;
 }
 
-.card-1 {
-  background-image: url("../images/2.1.jpg");
+header, footer {
+  padding: 15px;
+  background-color: #5DA7DB;
+
 }
 
-.card-2 {
-  background-image: url("../images/2.2.jpg");
-}
-
-.card-3 {
-  background-image: url("../images/2.3.jpg");
-}
-
-.card-4 {
-  background-image: url("../images/2.4.jpg");
-}
-
-.card {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
+main {
+  padding: 15px;
+  background-color: #81C6E8;
 }

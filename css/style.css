@@ -1,6 +1,6 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -9,46 +9,36 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
 }
 
-main {
-  padding: 5rem 0;
-  background-color: #333333;
+.gallery {
+  height: 100vh;
+  width: 100vw;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
 }
 
-.categories {
-  margin: 3rem auto;
-  width: 40%;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0 0;
+.card-1 {
+  background-image: url("../images/2.1.jpg");
 }
 
-.categories > div {
-  flex: 50%;
+.card-2 {
+  background-image: url("../images/2.2.jpg");
 }
 
-.categories__category {
-  width: 100%;
-  display: flex;
-  align-items: center;
+.card-3 {
+  background-image: url("../images/2.3.jpg");
 }
 
-.categories__category img {
-  width: 13rem;
-  height: 13rem;
+.card-4 {
+  background-image: url("../images/2.4.jpg");
 }
 
-
-.categories__category--text h3 {
-  font-size: 1.6rem;
-  color: #fff;
-}
-
-.categories__category--text p {
-  font-size: 1.3rem;
-  color: lightgray;
+.card {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }

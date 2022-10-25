@@ -6,112 +6,90 @@
 
 :root {
   font-size: 10px;
+  color: white;
 }
 
 .pricing {
-  display: grid;
-  grid-template-columns: repeat(4, 30rem);
-  justify-content: space-around;
-  align-content: center;
-
-  height: 100vh;
-}
-
-.pricing__table {
-  padding: 3rem 2rem;
-  border: 1px solid lightgray;
-  box-shadow: 1px 1px 5px lightgray;
-  border-radius: 1rem;
+  width: 80rem;
+  margin: 5rem auto;
 
   display: grid;
-  grid-gap: 1.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
 }
 
-h3 {
-  font-size: 2.5rem;
+.pricing > div {
+  padding: 5rem 4rem;
 }
 
-.pricing__table--name {
+.pricing__community {
+
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+
   display: grid;
-  grid-gap: .8rem;
+  gap: 1.3rem;
+
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  background-color: #1D5C63;
 }
 
-.pricing__table--name p {
-  color: rgb(108, 108, 108);
+.pricing__subscription {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  display: grid;
+  gap: 5rem;
+
+  border-bottom-left-radius: 1rem;
+  background-color: #3BACB6;
+}
+
+.pricing__why {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  border-bottom-right-radius: 1rem;
+  background-color: #2F8F9D;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
   font-size: 1.5rem;
 }
 
-.pricing__table--price {
-  display: grid;
-  grid-gap: 1rem;
-}
-
-.pricing__table--price h2 {
+a {
+  background-color: #1D5C63;
+  padding: 1.2rem 2rem;
+  border-radius: 5rem;
   font-size: 2rem;
-}
-
-.pricing__table--price p {
-  font-size: 1.5rem;
-}
-
-.pricing__table--price a {
-  padding: 1rem 1.5rem;
+  color: white;
   text-decoration: none;
-  background-color: #251D3A;
-  color: #fff;
-  border-radius: .5rem;
-  font-size: 1.5rem;
+  text-align: center;
 }
 
-.pricing__table--price p {
-  font-size: 1.7rem;
-}
-
-#current-plan {
-  background-color: #2155CD;
-}
-
-.double-price-component {
-  display: flex;
-}
-
-.double-price-component h2 {
-  font-size: 2.5rem;
-  font-weight: bold;
-}
-
-.crossed-price {
-  padding-right: 1rem;
-}
-
-.crossed-price {
-  color: rgb(98, 97, 97);
-  text-decoration: line-through;
-}
-
-ul {
+.pricing__subscription--price {
   display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.pricing__why {
+  display: grid;;
+  gap: 2rem;
+}
+
+.pricing__why--list {
+  display: grid;
+  grid-template-rows: repeat(6, 1fr);
+  gap: 2rem;
   list-style: none;
-  gap: 1rem 0;
 }
 
 li {
   font-size: 1.4rem;
-  font-weight: light;
-  color:rgb(98, 97, 97)
 }
-
-i {
-  padding-right: 1rem;
-}
-
-.fa-check {
-  color: rgb(19, 167, 81);
-  font-size: 1.5rem;
-}
-
-.fa-xmark {
-  color: rgb(183, 29, 29);
-  font-size: 1.5rem;
-}
-

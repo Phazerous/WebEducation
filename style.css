@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-size: 1.2rem;
+}
+header {
+    background-color: mediumorchid;
+    color: white;
+    height: 100px;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+form {
+    width: 500px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form input, form select {
+    padding: 0.5rem 1rem;
+}
+input[type="text"] {
+    width: 100%;
+}
+form > button {
+    cursor: pointer;
+    background-color: mediumorchid;
+    color: white;
+    border: none;
+    padding: 0.5rem 0.8rem;
+}
+form > button:hover {
+    background-color: violet;
+}
+
+ul {
+    list-style: none;
+    width: 500px;
+    margin: 2rem auto;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    gap: 1rem;
+    padding: 0.5rem 0;
+}
+.close {
+    color: red;
+    cursor: pointer;
+    font-weight: bolder;
+}
+.close:hover {
+    color:tomato
+}
+
+.author {
+    font-weight: 900;
+}
+
+.by {
+    font-weight: 900;
+    font-style: italic;
+}
+
+.fa-times {
+    color: red;
+}
+.inline-div {
+    display: inline;
+    flex: 1;
+    text-align: center;
+}
+
+li {
+    background-color: skyblue;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+
+    transition: .5s;
+}
+
+.remove-btn {
+    border: 2px solid darkblue;
+    border-radius: 30px;
+    background-color: white;
+}
+
+#done {
+    background-color: aquamarine;
+}

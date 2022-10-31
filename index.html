@@ -5,17 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JsLAB Spoiler</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Lodash -->
+    <script type = "text/JavaScript" 
+            src = "https://cdn.jsdelivr.net/npm/lodash@4.17.20/lodash.min.js">
+    </script>
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-<button id="myBtn">Toggle spoiler</button>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
 
-<div id="spoiler" class="closed">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, alias itaque provident ipsum mollitia commodi.</p>
-</div>
-
+    <main>
+        <form autocomplete="off">
+            <label>
+                <input id="new-todo" name="todo" type="text" placeholder="new todo" />
+            </label>
+            <select id="user-todo" name="user">
+                <option disabled selected>select user</option>
+            </select>
+            <button>Add Todo</button>
+        </form>
+        <ul id="todo-list">
+        </ul>
+    </main>
+    
     <script src="app.js"></script>
 </body>
 

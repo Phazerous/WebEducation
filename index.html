@@ -4,73 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Product Grid</title>
+    <title>Sign-Up Page</title>
 
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <section class="product-grid">
-        <div class="product-grid__product">
-            <figure class="product-grid__product--img">
-                <img loading="lazy" src="images/sweater.jpg" alt="sweater">
-            </figure>
+    <main class="container">
+        <figure class="logo">
+            <img src="images/el.jpg" alt="logo">
+        </figure>
 
-            <h6 class="product-grid__product--dept">Winter Clothings</h6>
+        <p class="description">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, at atque provident eum quis neque?
+        </p>
 
-            <h2 class="product-grid__product--name">Women's Winter Sweater</h2>
+        <figure class="sign-up-img">
+            <img src="images/sign-up.jpg" alt="Sign Up">
+        </figure>
 
-            <p class="product-grid__product--price">
-                <span>$48</span>
-                <span>$24</span>
-            </p>
+        <h6 class="mini-title">Start for free</h6>
 
-            <p class="product-grid__product--discount">50% Flat Discount</p>
-        </div>
+        <h2 class="title">Sign Up to Evolutive Learning</h2>
 
-        <div class="product-grid__product">
-            <figure class="product-grid__product--img">
-                <img loading="lazy" src="images/jacket.jpg" alt="jacket">
-            </figure>
+        <fieldset class="email-fieldset">
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="Enter Your Email">
+        </fieldset>
 
-            <h6 class="product-grid__product--dept">Ladies Jacket</h6>
+        <fieldset class="password-fieldset">
+            <label for="password">Password</label>
+            <input type="password" name="password" placeholder="At Least 8 Characters">
+        </fieldset>
 
-            <h2 class="product-grid__product--name">Ladies Jacket</h2>
+        <input type="submit" value="Create an Account">
 
-            <p class="product-grid__product--price">
-                <span>$49</span>
-            </p>
-        </div>
+        <a class="google-sign-up" href="#">Sign Up with Google</a>
 
-        <div class="product-grid__product">
-            <figure class="product-grid__product--img">
-                <img loading="lazy" src="images/sunglasses.jpg" alt="sunglasses">
-            </figure>
-
-            <h6 class="product-grid__product--dept">Sunglasses</h6>
-
-            <h2 class="product-grid__product--name">Black Stylish Sunglasses</h2>
-
-            <p class="product-grid__product--price">
-                <span>$59</span>
-            </p>
-        </div>
-
-        <div class="product-grid__product">
-            <figure class="product-grid__product--img">
-                <img loading="lazy" src="images/t-shirt.jpg" alt="t-shirt">
-            </figure>
-
-            <h6 class="product-grid__product--dept">T-Shirt</h6>
-
-            <h2 class="product-grid__product--name">Stylish Black T-Shirt</h2>
-
-            <p class="product-grid__product--price">
-                <span>$120</span>
-                <span>$60</span>
-            </p>
-
-            <p class="product-grid__product--discount">50% Flat Discount</p>
-        </div>
-    </section>
+        <p class="sign-in">Already have an account? <a href="#">Sign In</a></p>
+    </main>
 </body>
 </html>

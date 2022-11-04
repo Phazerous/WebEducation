@@ -1,46 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign-Up Page</title>
-
-    <link rel="stylesheet" href="css/styles.css">
+    <title>ToDo List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main class="container">
-        <figure class="logo">
-            <img src="images/el.jpg" alt="logo">
-        </figure>
+    <header>
+        <h1>ToDo List</h1>
+    </header>
 
-        <p class="description">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, at atque provident eum quis neque?
-        </p>
-
-        <figure class="sign-up-img">
-            <img src="images/sign-up.jpg" alt="Sign Up">
-        </figure>
-
-        <h6 class="mini-title">Start for free</h6>
-
-        <h2 class="title">Sign Up to Evolutive Learning</h2>
-
-        <fieldset class="email-fieldset">
-            <label for="email">Email</label>
-            <input type="email" name="email" placeholder="Enter Your Email">
-        </fieldset>
-
-        <fieldset class="password-fieldset">
-            <label for="password">Password</label>
-            <input type="password" name="password" placeholder="At Least 8 Characters">
-        </fieldset>
-
-        <input type="submit" value="Create an Account">
-
-        <a class="google-sign-up" href="#">Sign Up with Google</a>
-
-        <p class="sign-in">Already have an account? <a href="#">Sign In</a></p>
+    <main>
+        <form autocomplete="off">
+            <label>
+                <input id="new-todo" name="todo" type="text" placeholder="new todo" />
+            </label>
+            <select id="user-todo" name="user">
+                <option disabled selected>select user</option>
+            </select>
+            <button>Add Todo</button>
+        </form>
+        <ul id="todo-list">
+        </ul>
     </main>
+    
+    <script src="app.js"></script>
 </body>
+
 </html>
